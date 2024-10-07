@@ -80,6 +80,8 @@ int main() {
     char message[100];
     int shift;
 
+    printf("\n\n\n\n     *****Caeser Cipher*****\n\n\n\n");
+
     printf("Enter a message: ");
     gets(message);  // reads a line of text
 
@@ -100,7 +102,8 @@ int main() {
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/b6943846-dcf3-4019-8478-b9dbd87cd5d5)
+![image](https://github.com/user-attachments/assets/3009ae38-b420-4224-bdf7-e4650834bf66)
+
 
 
 
@@ -342,6 +345,7 @@ void decryptByPlayfairCipher(char str[], char key[]) {
 int main() {
     char str[SIZE], key[SIZE];
 
+    printf("\n\n\n\n     *****Playfair Cipher*****\n\n\n\n");
     // Key to be used
     strcpy(key, "SAVEETHA");
     printf("Key text: %s\n", key);
@@ -365,7 +369,8 @@ int main() {
 ```
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/ca63e66c-1156-4603-88bf-21272b3e5fa5)
+![image](https://github.com/user-attachments/assets/147497c3-8bd5-4023-b1de-1eccd453fb88)
+
 
 
 
@@ -412,6 +417,7 @@ int keymat[3][3] = { { 1, 2, 1 }, { 2, 3, 2 }, { 2, 2, 1 } };
 int invkeymat[3][3] = { { -1, 0, 1 }, { 2, -1, 0 }, { -2, 2, -1 } };
 char key[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+
 // Function to encode a triplet of characters
 void encode(char a, char b, char c, char ret[]) {
     int x, y, z;
@@ -451,6 +457,7 @@ int main() {
     char enc[1000] = "";
     char dec[1000] = "";
     int n;
+     printf("\n\n\n\n     *****Hill Cipher*****\n\n\n\n");
 
     strcpy(msg, "PERARASU");
     printf("Input message : %s\n", msg);
@@ -502,7 +509,8 @@ int main() {
 
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/71ab65eb-a07a-4cb1-abbc-3db92eb45896)
+![image](https://github.com/user-attachments/assets/eeb3ad96-176c-4278-a591-dc8e10c04199)
+
 
 
 
@@ -548,6 +556,7 @@ void decipher();
 
 int main() {
     int choice;
+printf("\n\n\n\n     *****Vigenere Cipher*****\n\n\n\n");
     while (1) {
         printf("\n1. Encrypt Text");
         printf("\n2. Decrypt Text");
@@ -616,7 +625,8 @@ void decipher() {
 
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/b7ca1959-5e89-4940-ae58-060dd5fabc02)
+![image](https://github.com/user-attachments/assets/b58cbb63-3b14-4ec4-afa4-feae7ae7f929)
+
 
 
 
@@ -660,6 +670,7 @@ void decrypt(char str[], int rails);
 int main() {
     int choice, rails;
     char str[1000];
+printf("\n\n\n\n     *****Railfence Cipher*****\n\n\n\n");
 
     printf("Enter a Secret Message: ");
     fgets(str, sizeof(str), stdin);  
@@ -787,9 +798,11 @@ void decrypt(char str[], int rails) {
 
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/899e06c8-1ef9-4a1c-90c2-53b49fae3b4d)
+![image](https://github.com/user-attachments/assets/ad1f9b2c-de36-4fbe-b31f-a2f522543d62)
 
-![image](https://github.com/user-attachments/assets/07b8b558-60ea-4148-91a1-d4b5f255bcc7)
+
+![image](https://github.com/user-attachments/assets/5b937d5e-2f57-440f-8ab7-cefcd595df5d)
+
 
 
 
